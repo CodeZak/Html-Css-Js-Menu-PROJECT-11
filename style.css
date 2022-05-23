@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css);
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    background-color: rgb(236, 235, 229);
+} 
+
+header .title {
+    font-size: 3em;
+    padding-bottom: 20px;
+    font-weight: 600;
+}
+.container {
+    height: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    height: 240px;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(143, 126, 30);
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+li {
+    border: 2px solid rgb(143, 126, 30);
+    border-radius: 10px;
+    border-style: outset;
+    padding: 4px 14px;
+    margin-left: 10px;
+    transition: 0.4s;
+}
+
+li:hover {
+    cursor: pointer;
+    background-color:rgb(143, 126, 30) ;
+}
+li:hover a {
+    color: white;
+}
+
+
+
+.hr {
+    border: 1x solid black;
+}
+/********** MAIN *************/
+main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.card {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 15px;
+
+}
+
+.food_img {
+    background-color:rgb(143, 126, 30) ;
+    overflow: hidden;
+    height: 150px;
+    width:40%;
+    border: 5px solid rgb(143, 126, 30);
+    border-radius: 5px;
+
+
+}
+
+
+
+.food_img img {
+    border: 2px solid rgb(143, 126, 30);
+    border: 2px;
+    width:270px;
+    height: auto;
+    transform: translate(0%,0%);
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width:60%;
+    padding: 0px 17px;
+}
+
+.food_name_price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+
+.food_name {
+    font-weight: 600;
+    letter-spacing:2px;
+}
+
+
+.food_price {
+    font-weight: 600;
+    letter-spacing:2px;
+    color: rgb(143, 126, 30);
+}
+
+.desc {
+    font-weight: 300;
+    color: rgb(85, 117, 156);
+}
+
+@media only screen and (max-width:1216px) {
+    .card {
+        width: 100%;  
+    }
+    .container {
+        max-width: 600px;
+    }
+    
+    
+}
+
+
+@media only screen and (max-width:770px) {
+
+    .card {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .food_img {
+        width:85%;
+        height: 220px;
+
+    }
+
+    .food_img img {
+        width:100%;
+        height:auto;
+
+    }
+        
+    .content {
+        width:85%;
+        padding: 17px 0px;
+
+    }
+    
+    .container {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+max-width: 480px;
+
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+header .title {
+    font-size: 2em;
+}
+
+
+}
